@@ -50,15 +50,41 @@
             android:textSize="@dimen/medium_text" />
 
         <TextView
-            android:id="@+id/textViewLoc"
+            android:id="@+id/textViewTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans_normal"
             android:layout_below="@id/textViewDetails"
-            android:layout_centerInParent="true"
             android:layout_marginTop="@dimen/top_extra_small"
+            android:layout_marginLeft="@dimen/fifty"
+            android:text="@string/title"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_business_black_24dp"
+            android:fontFamily="@font/open_sans_normal"
+            android:layout_below="@id/textViewTitle"
+            android:layout_marginLeft="@dimen/fifty"
             android:autoLink="all"
             android:text="@string/address"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="@dimen/large_text" />
+        <TextView
+            android:id="@+id/textViewNumber"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_normal"
+            android:layout_below="@id/textViewAddress"
+            android:layout_marginLeft="@dimen/fifty"
+            android:autoLink="all"
+            android:text="@string/number"
             android:textColor="@color/colorPrimary"
             android:textColorLink="@color/colorPrimary"
             android:textSize="@dimen/large_text"

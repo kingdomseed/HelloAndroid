@@ -4,5 +4,7 @@
     <string name="udacity_logo">Udacity Logo</string>
     <string name="master_skills">Master in-demand skills. Build and design amazing projects. Earn a valued credential. Launch your career in Data Science, Machine Learning, Android, iOS, and more. Be in demand.</string>
     <string name="get_ready">Get Job Ready with Udacity</string>
-    <string name="address">Udacity \n2465 Latham St \nMountain View, CA 94043 \n650-555-5555</string>
+    <string name="title">Udacity</string>
+    <string name="address">2465 Latham St \nMountain View, CA 94043</string>
+    <string name="number">650-555-5555</string>
 </resources>
