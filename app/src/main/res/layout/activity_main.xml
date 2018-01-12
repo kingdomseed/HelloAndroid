@@ -67,6 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_business_black_24dp"
+            android:drawablePadding="@dimen/top_extra_small"
             android:fontFamily="@font/open_sans_normal"
             android:layout_below="@id/textViewTitle"
             android:layout_marginLeft="@dimen/fifty"
@@ -78,6 +79,7 @@
         <TextView
             android:id="@+id/textViewNumber"
             android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:drawablePadding="@dimen/top_extra_small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/open_sans_normal"
