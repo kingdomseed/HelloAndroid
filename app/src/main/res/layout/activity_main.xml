@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,65 +7,61 @@
     android:background="@drawable/main_header_selector"
     tools:context="org.holtnet.helloandroid.MainActivity">
 
-    <ImageView
-        android:id="@+id/logoImage"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="@dimen/image_margins"
-        android:layout_marginRight="@dimen/image_margins"
-        android:layout_marginTop="@dimen/top_small"
-        android:adjustViewBounds="true"
-        android:background="@color/colorPrimary"
-        android:contentDescription="@string/udacity_logo"
-        android:padding="@dimen/paddingBG"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/ulogo" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textViewHeading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/logoImage"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="@dimen/top_extra_small"
-        android:text="@string/get_ready"
-        android:textAllCaps="true"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/large_text"
-        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/top_extra_small"
+            android:adjustViewBounds="true"
+            android:background="@color/colorPrimary"
+            android:contentDescription="@string/udacity_logo"
+            android:padding="@dimen/paddingBG"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ulogo" />
 
-    <TextView
-        android:id="@+id/textViewDetails"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewHeading"
-        android:layout_margin="@dimen/top_extra_small"
-        android:text="@string/master_skills"
-        android:textColor="@color/colorPrimary"
-        android:textSize="@dimen/medium_text" />
+        <TextView
+            android:id="@+id/textViewHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImage"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/open_sans_normal"
+            android:layout_marginTop="@dimen/top_extra_small"
+            android:text="@string/get_ready"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textViewLoc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewDetails"
-        android:textColorLink="@color/colorPrimary"
-        android:layout_marginTop="@dimen/top_extra_small"
-        android:layout_centerInParent="true"
-        android:autoLink="all"
-        android:text="@string/address"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textViewDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_normal"
+            android:layout_below="@id/textViewHeading"
+            android:layout_margin="@dimen/top_extra_small"
+            android:text="@string/master_skills"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textViewLoc"
-        android:layout_marginBottom="@dimen/top_extra_small"
-        android:layout_marginTop="@dimen/top_small"
-        android:contentDescription="@string/udacity_map"
-        android:src="@drawable/umap" />
-
-</RelativeLayout>
+        <TextView
+            android:id="@+id/textViewLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_normal"
+            android:layout_below="@id/textViewDetails"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/top_extra_small"
+            android:autoLink="all"
+            android:text="@string/address"
+            android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorPrimary"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</ScrollView>
