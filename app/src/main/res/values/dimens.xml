@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_margins">30dp</dimen>
+    <dimen name="top_small">20dp</dimen>
+    <dimen name="top_extra_small">10dp</dimen>
+    <dimen name="paddingBG">4dp</dimen>
+    <dimen name="large_text">20sp</dimen>
+    <dimen name="medium_text">16sp</dimen>
+</resources>
